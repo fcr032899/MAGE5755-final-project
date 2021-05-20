@@ -73,7 +73,7 @@ bool ObjectFinder::find_upright_coke_can(float surface_height, geometry_msgs::Po
 
     object_pose.header.frame_id = "base_link";
 
-    object_pose.pose.position.x = centroid(0)+0.002;
+    object_pose.pose.position.x = centroid(0)+0.075;
     object_pose.pose.position.y = centroid(1)-0.001;
 
     object_pose.pose.position.z = centroid(2)+0.05;
