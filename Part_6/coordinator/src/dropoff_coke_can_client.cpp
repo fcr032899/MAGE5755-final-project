@@ -87,8 +87,8 @@ int main(int argc, char** argv) {
     dropoff_pose.pose.position.z = 0;
     dropoff_pose.pose.orientation.x = 0;
     dropoff_pose.pose.orientation.y = 0;
-    dropoff_pose.pose.orientation.z = 0.707;
-    dropoff_pose.pose.orientation.w = 0.707;
+    dropoff_pose.pose.orientation.z = 0.7;
+    dropoff_pose.pose.orientation.w = 0.7;
     dropoff_pose.header.stamp = ros::Time::now();
 
 
