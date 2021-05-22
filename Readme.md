@@ -35,18 +35,27 @@ roslaunch  gazebo_ros  empty_world.launch
 ```
 roslaunch baxter_variations baxter_on_pedestal_w_kinect_coke.launch 
 ```
+![added objects in Gazebo.jpg](./images/8.jpg)
 3rd cmd:  Start RVIZ and make the baxter robot arm in pre_pose
 ```
 roslaunch coordinator coord_vision_manip_coke.launch
 ```
+
+![jpg](./images/9.9.jpg)
+
 4th cmd : Grab coke can
+
 ```
 rosrun coordinator acquire_coke_can_client
 ```
+![grab.jpg](./images/11.jpg)
 5th cmd :Put down the coke can
+
 ```
 rosrun coordinator dropoff_coke_can_client
 ```
+
+![drop.off.jpg](./images/12.jpg)
 
 
 # 4.Video
