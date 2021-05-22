@@ -61,7 +61,7 @@ rosrun coordinator dropoff_coke_can_client
 # 4.Video
 You can watch the full simulation process form :
 
-[youtube.video](https://www.youtube.com/watch?v=3I2kVjDQLXQ)
+[youtube video](https://www.youtube.com/watch?v=3I2kVjDQLXQ)
 # 5.FAQ
 When using the baxter robot to grab the coke can, you may encounter the situation where the baxter grabbing width is not enough. You need to change the finger extension from narrow to wide in the right_end_effector.urdf.xacro in the baxter robot.
 
