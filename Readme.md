@@ -1,21 +1,28 @@
-# Use the Baxter robot to grab the coke can from the side
+# 1.Summary
+Here you can use the following instructions and instructions to complete the process of picking up the coke can from the side by the baxter robot. Completed instructions and corresponding instructions and given, and finally you can see the simulated video
+# 2.Quickstart
+The following steps can quickly complete the download and compilation process of ROS
+## 2.1 Install ROS
+you need to download the ROS_noetice version,you can download from here http://wiki.ros.org/kinetic/Installation/Ubuntu
 
-## 1.First time Set up
-First you need to download the ROS_noetice version,you can download from here http://wiki.ros.org/kinetic/Installation/Ubuntu
+## 2.1 Git clone necesay packages
 
 Then,Create a ROS environment and download the necessary packages,You can use the following commands:
-```
+```bash
 mkdir -p $HOME/Coke_ws/src
 git clone https://github.com/rojas70/hlearning_ros_external_pkgs_noetic.git
 git clone https://github.com/rojas70/learning_ros_noetic.git
 git clone https://github.com/fcr032899/MAGE5755-final-project
  ```
-## 2.Build the workspace
-```
-cd cd $HOME/Coke_ws/
+## 2.3 Build the workspace
+```bash
+cd $HOME/Coke_ws/
 Catkin_make
 ````
-## 3.Run cmd to grab coke can from side
+So far, you have completed all the prerequisite preparations
+
+# 3.Overview
+Run cmd to grab coke can from side
 Before running cmd,please 
 ```
 souce ./devel/setup.bash
@@ -40,9 +47,12 @@ rosrun coordinator acquire_coke_can_client
 ```
 rosrun coordinator dropoff_coke_can_client
 ```
+
+
+# 4.Video
 You can watch the full simulation process form :
 
-# Notice 
+# 5.FAQ
 When using the baxter robot to grab the coke can, you may encounter the situation where the baxter grabbing width is not enough. You need to change the finger extension from narrow to wide in the right_end_effector.urdf.xacro in the baxter robot.
 
 
