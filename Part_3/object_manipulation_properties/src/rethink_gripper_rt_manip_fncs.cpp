@@ -21,14 +21,14 @@ void rethink_grasp_COKE_CAN_ID(int query_code, int grasp_option,
     object_pose_wrt_gripper.position.x = 0.0; //easy--align gripper origin w/ object origin
     object_pose_wrt_gripper.position.y = 0.0;
     object_pose_wrt_gripper.position.z = 0.0;
-    object_pose_wrt_gripper.orientation.x = -0.7071068; //x-axis parallel, z-axis anti-parallel:
-    object_pose_wrt_gripper.orientation.y = 0.0; //grasp from above
+    object_pose_wrt_gripper.orientation.x = -0.7071068; 
+    object_pose_wrt_gripper.orientation.y = 0.0; 
     object_pose_wrt_gripper.orientation.z = 0.0;
     object_pose_wrt_gripper.orientation.w = 0.7071068;
     object_grasp_poses_wrt_gripper.clear();
     object_grasp_poses_wrt_gripper.push_back(object_pose_wrt_gripper);
     object_pose_wrt_gripper.orientation.x = 0.0; //x-axis anti-parallel, z-axis anti-parallel:
-    object_pose_wrt_gripper.orientation.y = 1.0; //grasp from above
+    object_pose_wrt_gripper.orientation.y = 1.0; 
     object_grasp_poses_wrt_gripper.push_back(object_pose_wrt_gripper);
     Eigen::Affine3d affine_object_wrt_gripper, affine_object_wrt_gripper_approach, affine_object_wrt_gripper_depart;
     //affine_object_wrt_gripper = xformUtils.transformPoseToEigenAffine3d(geometry_msgs::Pose pose);
@@ -252,7 +252,6 @@ void rethink_grasp_TOY_BLOCK_ID(int query_code, int grasp_option,
                 for (int i = 0; i < object_grasp_poses_wrt_gripper.size(); i++) {
                     object_pose_wrt_gripper = object_grasp_poses_wrt_gripper[i];
                     object_pose_wrt_gripper.position.z += 0.1; // add approach dist in gripper z direction
-                    ROS_WARN("!!!!");
                     object_approach_poses_wrt_gripper.push_back(object_pose_wrt_gripper);
                     response.gripper_pose_options.clear();
 
