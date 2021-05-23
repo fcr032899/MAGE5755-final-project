@@ -69,7 +69,7 @@ bool ObjectFinder::find_upright_coke_can(float surface_height, geometry_msgs::Po
     R.col(0) = major_axis;
     R.col(2) = plane_normal;
     R.col(1) = plane_normal.cross(major_axis);
-    Eigen::Quaternionf quat(R)
+    Eigen::Quaternionf quat(R);
 
     object_pose.header.frame_id = "base_link";
 
